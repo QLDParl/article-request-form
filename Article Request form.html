@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Access Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img.logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            height: 106px;
+            width: 112px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p.intro {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #005a9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #003f6f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://www.parliament.qld.gov.au/-/media/Files/Project/QPS/Logos/parliament-logo.ashx?h=106&amp;w=112&amp;la=en&amp;hash=55A6209349E4B9787E940C7E76C38604" alt="Queensland Parliament Logo">
+        <h1>Article Access Request</h1>
+        <p class="intro">The article you require is not available through the Queensland Parliamentary Library’s subscriptions or databases, please complete and submit this form. The library will endeavour to source the article on your behalf.</p>
+        <form action="mailto:QPL.acquisitions@parliament.qld.gov.au" method="post" enctype="text/plain">
+            <label for="title">Article Title</label>
+            <input type="text" id="title" name="title">
+
+            <label for="author">Author(s)</label>
+            <input type="text" id="author" name="author">
+
+            <label for="journal">Journal Title</label>
+            <input type="text" id="journal" name="journal">
+
+            <label for="issn">ISSN</label>
+            <input type="text" id="issn" name="issn">
+
+            <label for="volume">Volume</label>
+            <input type="text" id="volume" name="volume">
+
+            <label for="issue">Issue</label>
+            <input type="text" id="issue" name="issue">
+
+            <label for="year">Year of Publication</label>
+            <input type="text" id="year" name="year">
+
+            <label for="pages">Page Numbers</label>
+            <input type="text" id="pages" name="pages">
+
+            <label for="doi">DOI or URL</label>
+            <input type="text" id="doi" name="doi">
+
+            <label for="email">Requester Email</label>
+            <input type="email" id="email" name="email">
+
+            <input type="submit" value="Submit Request">
+        </form>
+    </div>
+</body>
+</html>
